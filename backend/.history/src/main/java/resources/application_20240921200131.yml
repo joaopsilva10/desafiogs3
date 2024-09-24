@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db  # Banco de dados em memória
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true  # Habilita o console H2
+  jpa:
+    hibernate:
+      ddl-auto: update  # Cria/tabela as tabelas automaticamente
+    show-sql: true      # Mostra as queries SQL no console
